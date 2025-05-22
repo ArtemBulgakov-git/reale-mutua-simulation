@@ -33,39 +33,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.dynamic-data {
-  padding: 3rem 1rem;
-  text-align: center;
-  background-color: var(--background-alt);
-  border-radius: var(--radius);
-  margin: 2rem auto;
-  max-width: var(--max-width);
-}
-
-#country-name {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  font-weight: 500;
-  color: var(--primary-dark);
-}
-
-#load-country {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 0.6rem 1.5rem;
-  font-size: 1rem;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-#load-country:hover,
-#load-country:focus {
-  background-color: var(--primary-dark);
-  outline: none;
-}
-
 /* Background Video & Overlay */
 #bg-video {
   position: fixed;
