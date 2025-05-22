@@ -11,8 +11,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="icon" href="/assets/img/logo.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg" />
   </head>
 
   <body>
@@ -24,31 +24,33 @@
 
     <!-- Header -->
     <header class="site-header">
-      <div class="container header-container">
-        <a href="index.html" class="logo" title="Go to homepage">
-          <img src="/assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
-        </a>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/calcola.html">Calculate Insurance</a></li>
-            <li><a href="pages/pricing.html">Plans</a></li>
-            <li><a href="pages/faq.html">FAQ</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-            <li><a href="pages/blog.html">Blog</a></li>
+  <div class="container header-container">
+    <a href="index.html" class="logo" title="Go to homepage">
+      <img src="assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
+    </a>
 
-            <!-- Dropdown Menu -->
-            <li class="dropdown">
-              <a href="javascript:void(0)">MyLogin</a>
-              <ul class="dropdown-menu">
-                <li><a href="pages/login.html">Login</a></li>
-                <li><a href="pages/registration.html">Registration</a></li>
-              </ul>
-            </li>
+    <!-- Updated nav tag -->
+    <nav role="navigation" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/calcola.html">Calculate Insurance</a></li>
+        <li><a href="pages/pricing.html">Plans</a></li>
+        <li><a href="pages/faq.html">FAQ</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)">MyLogin</a>
+          <ul class="dropdown-menu">
+            <li><a href="pages/login.html">Login</a></li>
+            <li><a href="pages/registration.html">Registration</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <!-- Main -->
     <main>
@@ -81,9 +83,7 @@
             </div>
             <div class="step">
               <h3>3. Get Insured Instantly</h3>
-              <p>
-                Confirm your plan and get full coverage via email.
-              </p>
+              <p>Confirm your plan and get full coverage via email.</p>
             </div>
           </div>
         </div>
@@ -94,11 +94,11 @@
         <div class="container">
           <h2>Accepted Payment Methods</h2>
           <div class="payment-icons">
-            <img src="/assets/img/visa.png" alt="Visa" />
-            <img src="/assets/img/mastercard.png" alt="Mastercard" />
-            <img src="/assets/img/paypal.png" alt="PayPal" />
-            <img src="/assets/img/unionpay.png" alt="UnionPay" />
-            <img src="/assets/img/alipay.png" alt="AliPay" />
+            <img src="assets/img/visa.png" alt="Visa" />
+            <img src="assets/img/mastercard.png" alt="Mastercard" />
+            <img src="assets/img/paypal.png" alt="PayPal" />
+            <img src="assets/img/unionpay.png" alt="UnionPay" />
+            <img src="assets/img/alipay.png" alt="AliPay" />
           </div>
         </div>
       </section>
