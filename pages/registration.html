@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reale Mutua - Registration</title>
+
+    <!-- Normalize CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/logo.jpg" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo" title="Go to homepage">
+          <img src="/assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/pages/calcola.html">Calculate Insurance</a></li>
+            <li><a href="/pages/pricing.html">Plans</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+            <!-- Dropdown Menu -->
+            <li class="dropdown">
+              <a href="javascript:void(0)">MyLogin</a>
+              <ul class="dropdown-menu">
+                <li><a href="/pages/login.html">Login</a></li>
+                <li><a href="/pages/registration.html">Registration</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="registration-form">
+        <div class="container">
+          <h1>Register for Car Insurance</h1>
+          <p>Fill out the form to create your personal account.</p>
+
+          <form action="/submit_registration" method="POST">
+            <!-- Personal Information -->
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first_name" required />
+
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last_name" required />
+
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob" required />
+
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+              <small>Format: 123-456-7890</small>
+
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" required />
+            </fieldset>
+
+            <!-- Vehicle Information -->
+            <fieldset>
+              <legend>Vehicle Information</legend>
+              <label for="vehicle-make">Make:</label>
+              <input
+                type="text"
+                id="vehicle-make"
+                name="vehicle_make"
+                required
+              />
+
+              <label for="vehicle-model">Model:</label>
+              <input
+                type="text"
+                id="vehicle-model"
+                name="vehicle_model"
+                required
+              />
+
+              <label for="vehicle-year">Year of Manufacture:</label>
+              <input
+                type="number"
+                id="vehicle-year"
+                name="vehicle_year"
+                min="1900"
+                max="2025"
+                required
+              />
+
+              <label for="vehicle-vin"
+                >Vehicle Identification Number (VIN):</label
+              >
+              <input type="text" id="vehicle-vin" name="vehicle_vin" required />
+
+              <label for="vehicle-usage">Primary Usage of Vehicle:</label>
+              <select id="vehicle-usage" name="vehicle_usage" required>
+                <option value="personal">Personal Use</option>
+                <option value="business">Business Use</option>
+                <option value="commute">Commute</option>
+              </select>
+            </fieldset>
+
+            <!-- Additional Information -->
+            <fieldset>
+              <legend>Additional Information</legend>
+              <label for="driving-experience"
+                >Years of Driving Experience:</label
+              >
+              <input
+                type="number"
+                id="driving-experience"
+                name="driving_experience"
+                min="0"
+                required
+              />
+
+              <label for="previous-claims"
+                >Have you had any previous claims?</label
+              >
+              <select id="previous-claims" name="previous_claims" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+
+              <label for="insurance-history"
+                >Do you have any prior insurance history?</label
+              >
+              <select id="insurance-history" name="insurance_history" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </fieldset>
+
+            <!-- Insurance Preferences -->
+            <fieldset>
+              <legend>Insurance Preferences</legend>
+              <label for="coverage-type">Preferred Coverage Type:</label>
+              <select id="coverage-type" name="coverage_type" required>
+                <option value="comprehensive">Comprehensive</option>
+                <option value="third-party">Third Party</option>
+                <option value="third-party-fire-theft">
+                  Third Party, Fire & Theft
+                </option>
+              </select>
+
+              <label for="payment-frequency"
+                >Preferred Payment Frequency:</label
+              >
+              <select id="payment-frequency" name="payment_frequency" required>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="annually">Annually</option>
+              </select>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit" class="cta-button">
+              Submit Registration
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Payment Methods -->
+      <section class="payment-methods">
+        <div class="container">
+          <h2>Accepted Payment Methods</h2>
+          <div class="payment-icons">
+            <img src="/assets/img/visa.png" alt="Visa" />
+            <img src="/assets/img/mastercard.png" alt="Mastercard" />
+            <img src="/assets/img/paypal.png" alt="PayPal" />
+            <img src="/assets/img/unionpay.png" alt="UnionPay" />
+            <img src="/assets/img/alipay.png" alt="AliPay" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-top">
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/company/reale-mutua-assicurazioni/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.instagram.com/realemutuaofficial/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a
+            href="https://www.facebook.com/realemutuaofficial/?locale=it_IT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Artem Bulgakov. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

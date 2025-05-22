@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reale Mutua - Your Automobile is Safe</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+    <link rel="icon" href="/assets/img/logo.jpg" />
+  </head>
+
+  <body>
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="/assets/video/background_home.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- Header -->
+
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="../index.html" class="logo" title="Go to homepage">
+          <img src="/assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/calcola.html">Calculate Insurance</a></li>
+            <li><a href="../pages/pricing.html">Plans</a></li>
+            <li><a href="../pages/faq.html">FAQ</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+
+            <!-- Dropdown Menu -->
+            <li class="dropdown">
+              <a href="javascript:void(0)">MyLogin</a>
+              <ul class="dropdown-menu">
+                <li><a href="../pages/login.html">Login</a></li>
+                <li><a href="../pages/registration.html">Registration</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Contact Us</h1>
+      <p>
+        If you have questions or need assistance, feel free to reach out using
+        the form below.
+      </p>
+
+      <form action="#" method="post">
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Your Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container footer-top">
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/company/reale-mutua-assicurazioni/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.instagram.com/realemutuaofficial/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a
+            href="https://www.facebook.com/realemutuaofficial/?locale=it_IT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Artem Bulgakov. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/contact.js"></script>
+  </body>
+</html>

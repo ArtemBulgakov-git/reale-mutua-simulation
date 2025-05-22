@@ -1,0 +1,32 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Style */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Fallback Link Styling */
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #004080;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #0066cc;
+  }
+  

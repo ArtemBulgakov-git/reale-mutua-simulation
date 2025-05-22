@@ -1,0 +1,280 @@
+/* Base styles */
+/* Root Variables */
+:root {
+  --primary: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --secondary: #f0f9ff;
+  --text: #070707;
+  --text-light: #000000;
+  --background: #ffffff;
+  --background-alt: #f8fafc;
+  --border: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+             0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+               0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --radius: 0.5rem;
+  --transition: all 0.2s ease-in-out;
+  --max-width: 1200px;
+}
+
+/* Base Reset */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.dynamic-data {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--background-alt);
+  border-radius: var(--radius);
+  margin: 2rem auto;
+  max-width: var(--max-width);
+}
+
+#country-name {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  color: var(--primary-dark);
+}
+
+#load-country {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#load-country:hover,
+#load-country:focus {
+  background-color: var(--primary-dark);
+  outline: none;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--background);
+  box-shadow: var(--shadow);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: var(--radius);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  color: var(--text);
+  padding: 0.5rem 0;
+}
+
+.nav-links li a:hover {
+  color: var(--primary-dark);
+}
+/* Hero Section */
+.page-hero {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.page-hero .subtitle {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 0;
+  background-color: var(--secondary-color);
+}
+
+.faq-item {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.faq-item h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.faq-item p {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* =======================
+   PAYMENT METHODS
+   ======================= */
+.payment-methods {
+  padding: 3rem 1rem;
+  background-color: var(--colore-sfondo);
+  text-align: center;
+}
+
+.payment-methods h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.payment-icons img {
+  height: 40px;
+}
+
+/* =======================
+   FOOTER
+   ======================= */
+footer {
+  background-color: var(--sfondo-footer);
+  color: var(--testo-footer);
+  padding: 2rem 1rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-top a {
+  color: var(--testo-footer);
+  font-weight: 500;
+}
+
+.footer-top a:hover {
+  color: var(--colore-hover-footer);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--bordo-footer);
+  padding-top: 1rem;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .faq-item h2 {
+    font-size: 1.1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.95rem;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  footer .container {
+    padding: 1rem;
+    text-align: center;
+  }
+}
