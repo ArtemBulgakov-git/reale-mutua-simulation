@@ -1,81 +1,31 @@
-# Responsive and Interactive Website for Reale Mutua  
-> Phase 1 – Simulation of the Reale Mutua Website as Starting Point
 
-## Overview
+---
 
-This repository contains the **first phase** of a multi-stage front-end development project. The goal of this initial phase is to **simulate some parts of the existing Reale Mutua website**, serving as a foundation for future architectural evolution and personal growth. It includes responsive design, interactive features, and mock authentication workflows.
+## 📈 Future Development
 
-## What I Achieved
+This simulation is **Phase 1** of a larger academic project. The next phases will include:
 
-- Recreated the key pages of the Reale Mutua site using semantic, accessible HTML5.
-- Built a responsive layout using CSS3 with a mobile-first approach.
-- Added JavaScript-based interactivity (form validation, menu toggles, etc.).
-- Simulated a login flow using DummyJSON API and token-based logic (JWT).
-- Prepared the groundwork for transitioning to a fully dynamic front-end architecture.
+- Backend integration (Node.js or Django)
+- User authentication (JWT)
+- Data persistence (e.g., MongoDB or PostgreSQL)
+- Full-stack deployment
 
-## Technologies Used
+---
 
-- **HTML5** – Semantic structure
-- **CSS3** – Responsive layout, custom properties, media queries
-- **JavaScript (ES6+)** – Interactivity and logic
-- **REST API** – DummyJSON for mock authentication
-- **Git & GitHub** – Version control and project collaboration
+## 🔗 Live Preview (Optional)
 
-## Key Features
+> *Add a link to GitHub Pages or a deployed version if available*
 
-- Responsive and accessible user interface
-- Simulated login with token-based logic
-- Progressive enhancement approach
-- Clear, modular, maintainable codebase
-- Design system aligned with the original Reale Mutua site
+---
 
+## 👤 Author
 
+**Artem Bulgakov**  
+Student at ITS-ICT Piemonte  
+[GitHub Profile](https://github.com/ArtemBulgakov-git)
 
-## 📁 Project Structure
+---
 
-PRJO1_ASSICURAZIONE/
-│
-├── assets/
-│   ├── css/
-│   │   ├── blog.css
-│   │   ├── calcola.css
-│   │   ├── contact.css
-│   │   ├── faq.css
-│   │   ├── login.css
-│   │   ├── plan-basic.css
-│   │   ├── plan-premium.css
-│   │   ├── plan-standard.css
-│   │   ├── pricing.css
-│   │   ├── registration.css
-│   │   └── style.css
-│   │
-│   ├── img/
-│   │   ├── alipay.png
-│   │   ├── logo.jpg
-│   │   ├── mastercard.png
-│   │   ├── paypal.png
-│   │   ├── pricing-background.jpg
-│   │   ├── unionpay.png
-│   │   └── visa.png
-│   │
-│   ├── js/
-│   │   ├── calcola.js
-│   │   ├── contact.js
-│   │   ├── faq.js
-│   │   ├── login.js
-│   │
-│   └── video/
-│       └── background_home.mp4
-│
-├── pages/
-│   ├── blog.html
-│   ├── calcola.html
-│   ├── contact.html
-│   ├── faq.html
-│   ├── login.html
-│   ├── plan-basic.html
-│   ├── plan-premium.html
-│   ├── plan-standard.html
-│   ├── pricing.html
-│   ├── registration.html
-│   └── index.html
+## 📄 License
+
+This project is part of a personal academic portfolio. Feel free to explore and learn, but please do not use for commercial purposes without permission.
