@@ -1,22 +1,59 @@
 /* Base styles */
 /* Root Variables */
 :root {
-  --primary: #3b82f6;
-  --primary-dark: #1d4ed8;
-  --secondary: #f0f9ff;
-  --text: #070707;
-  --text-light: #000000;
+--primary-color: #3b82f6;
+  --primary-dark: #1e40af;
+  --secondary-color: #f0f9ff;
+  --light-gray: #f8fafc;
+
   --background: #ffffff;
-  --background-alt: #f8fafc;
-  --border: #e2e8f0;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-             0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-               0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  --radius: 0.5rem;
-  --transition: all 0.2s ease-in-out;
+  --background-alt: #f9fafb;
+  --text: #1f2937;
+
+  --colore-sfondo: #f0f0f0;
+  --sfondo-footer: #1f2937;
+  --testo-footer: #ffffff;
+  --colore-hover-footer: #93c5fd;
+  --bordo-footer: #374151;
+
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --transition: all 0.3s ease-in-out;
   --max-width: 1200px;
 }
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding: 0.5rem 0;
+  }
+}
+
+
 
 /* Base Reset */
 body {
