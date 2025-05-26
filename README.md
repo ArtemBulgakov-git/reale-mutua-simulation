@@ -1,10 +1,9 @@
 
-
 # 🌐 Reale Mutua Website Simulation – Phase 1
 
-**You are welcome to explore and test the web version of this simulation directly online**—no need to download the project. You can check its **responsiveness, design, and user experience** by following the link provided below in the [🔗 Live Demo](https://artembulgakov-git.github.io/reale-mutua-simulation/) section.
+This repository contains the **first phase** of a multi-stage front-end development project. The goal of this phase is to **simulate the current Reale Mutua website**, serving as a foundational step in my journey toward becoming a Full Software Developer. It includes responsive design, interactive UI features, and mock authentication workflows.
 
-This repository contains the **first phase** of a multi-stage front-end development project. The goal of this phase is to **simulate the current Reale Mutua website**, serving as a foundational step in my journey toward becoming a Full Stack Developer. It includes responsive design, interactive UI features, and mock authentication workflows.
+**You are welcome to explore and test the web version of this simulation directly online**—no need to download the project. You can check its **responsiveness, design, and user experience** by following the link provided below in the [🔗 Live Demo](https://artembulgakov-git.github.io/reale-mutua-simulation/) section.
 
 ---
 
