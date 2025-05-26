@@ -4,111 +4,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Reale Mutua</title>
+  <title>Pricing Plans - Reale Mutua</title>
   <link href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" rel="stylesheet" />
-   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/pricing.css" />
-  <link rel="icon" href="../assets/img/logo.jpg"/>
+  <link rel="icon" href="../assets/img/logo.jpg" />
 </head>
 
 <body>
 
-    <video autoplay muted loop playsinline id="bg-video">
+  <video autoplay muted loop playsinline id="bg-video">
     <source src="../assets/video/background_home.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <div class="video-overlay"></div>
-<!-- Header -->
-    <header class="site-header">
-      <div class="container header-container">
-        <a href="../index.html" class="logo" title="Go to homepage">
-          <img src="../assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
-        </a>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/calcola.html">Calculate Insurance</a></li>
-            <li><a href="../pages/pricing.html">Plans</a></li>
-            <li><a href="../pages/faq.html">FAQ</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-            <li><a href="../pages/blog.html">Blog</a></li>
-            <li class="dropdown">
-              <a href="javascript:void(0)">MyLogin</a>
-              <ul class="dropdown-menu">
-                <li><a href="../pages/login.html">Login</a></li>
-                <li><a href="../pages/registration.html">Registration</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-          <!-- Dropdown Menu -->
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo" title="Go to homepage">
+        <img src="../assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/calcola.html">Calculate Insurance</a></li>
+          <li><a href="../pages/pricing.html">Plans</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)">MyLogin</a>
             <ul class="dropdown-menu">
-                <li><a href="../pages/login.html">Login</a></li>
+              <li><a href="../pages/login.html">Login</a></li>
               <li><a href="../pages/registration.html">Registration</a></li>
             </ul>
           </li>
         </ul>
       </nav>
-      </div>
     </div>
   </header>
 
-</body>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Choose Your Plan</h1>
+        <p>Select the plan that best suits your needs. No hidden fees, cancel anytime.</p>
+      </div>
+    </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+      <div class="pricing-card">
+        <h2>Basic</h2>
+        <p class="price">€9.99 / month</p>
+        <ul>
+          <li>Essential coverage</li>
+          <li>Email support</li>
+          <li>Basic reporting</li>
+          <li>Single vehicle</li>
+        </ul>
+        <a href="calcola.html" class="btn">Get Started</a>
+      </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Choose Your Plan</h1>
-      <p>Select the plan that best suits your needs. No hidden fees, cancel anytime.</p>
-    </div>
-  </section>
+      <div class="pricing-card featured">
+        <h2>Standard</h2>
+        <p class="price">€19.99 / month</p>
+        <ul>
+          <li>All Basic features</li>
+          <li>Priority support</li>
+          <li>Extended coverage</li>
+          <li>Up to 2 vehicles</li>
+        </ul>
+        <a href="calcola.html" class="btn">Get Started</a>
+      </div>
 
-  <!-- Pricing Section -->
-  <section class="pricing-section">
-    <div class="pricing-card">
-      <h2>Basic</h2>
-      <p class="price">€9.99 / month</p>
-      <ul>
-        <li>Essential coverage</li>
-        <li>Email support</li>
-        <li>Basic reporting</li>
-        <li>Single vehicle</li>
-      </ul>
-      <a href="calcola.html" class="btn">Get Started</a>
-    </div>
+      <div class="pricing-card">
+        <h2>Premium</h2>
+        <p class="price">€29.99 / month</p>
+        <ul>
+          <li>All Standard features</li>
+          <li>24/7 support</li>
+          <li>Full coverage</li>
+          <li>Unlimited vehicles</li>
+        </ul>
+        <a href="calcola.html" class="btn">Get Started</a>
+      </div>
+    </section>
 
-    <div class="pricing-card featured">
-      <h2>Standard</h2>
-      <p class="price">€19.99 / month</p>
-      <ul>
-        <li>All Basic features</li>
-        <li>Priority support</li>
-        <li>Extended coverage</li>
-        <li>Up to 2 vehicles</li>
-      </ul>
-      <a href="calcola.html" class="btn">Get Started</a>
-    </div>
-
-    <div class="pricing-card">
-      <h2>Premium</h2>
-      <p class="price">€29.99 / month</p>
-      <ul>
-        <li>All Standard features</li>
-        <li>24/7 support</li>
-        <li>Full coverage</li>
-        <li>Unlimited vehicles</li>
-      </ul>
-      <a href="calcola.html" class="btn">Get Started</a>
-    </div>
-  </section>
-
-     <!-- Payment Methods -->
-     <section class="payment-methods">
+    <!-- Payment Methods -->
+    <section class="payment-methods">
       <div class="container">
         <h2>Accepted Payment Methods</h2>
         <div class="payment-icons">
@@ -125,13 +111,11 @@
   <!-- Footer -->
   <footer>
     <div class="container footer-top">
-     
       <div class="social">
         <a href="https://www.linkedin.com/company/reale-mutua-assicurazioni/posts/?feedView=all" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://www.instagram.com/realemutuaofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://www.facebook.com/realemutuaofficial/?locale=it_IT" target="_blank" rel="noopener noreferrer">Facebook</a>
-
-      
+      </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 Artem Bulgakov. All rights reserved.</p>
