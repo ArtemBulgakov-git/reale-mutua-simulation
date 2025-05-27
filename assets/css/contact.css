@@ -628,3 +628,81 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* Mobile Hamburger Toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background-color: var(--text, #333);
+  height: 3px;
+  width: 24px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hamburger::before {
+  position: absolute;
+  top: -8px;
+}
+
+.hamburger::after {
+  position: absolute;
+  top: 8px;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+  }
+
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--background, #fff);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    box-shadow: var(--shadow, 0 2px 10px rgba(0, 0, 0, 0.1));
+    z-index: 1000;
+  }
+
+  nav .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  nav .nav-links.show {
+    display: flex;
+  }
+
+  /* Optional: style dropdown menu to be visible on mobile */
+  .dropdown:hover .dropdown-menu,
+  .dropdown .dropdown-menu {
+    position: static;
+    display: none;
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+}
