@@ -409,3 +409,48 @@ footer {
     cursor: pointer;
   }
 }
+/* Hamburger button - active state animation */
+.nav-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle.active .hamburger::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Show nav links when toggled */
+.nav-links.show {
+  display: flex !important; /* override display:none */
+}
+
+/* Dropdown menu adjustments */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+.dropdown-menu.show-dropdown {
+  display: block;
+}
+
+/* Mobile dropdown override */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding-left: 0;
+  }
+}
