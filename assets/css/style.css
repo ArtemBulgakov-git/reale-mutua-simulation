@@ -33,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 /* Background Video & Overlay */
 #bg-video {
   position: fixed;
@@ -68,7 +69,7 @@ body {
   top: 0;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow);
-  padding: 1rem 0;
+  padding: 0.5rem 0; /* Reduced padding */
   z-index: 10;
   backdrop-filter: saturate(180%) blur(10px);
 }
@@ -77,10 +78,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .logo img {
-  width: 60px;
+  width: 45px; /* smaller logo */
   height: auto;
   border-radius: var(--radius);
 }
@@ -89,19 +91,16 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin: 0;
   padding: 0;
-}
-
-.nav-links li {
-  position: relative;
 }
 
 .nav-links li a {
   font-weight: 600;
   color: var(--text);
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
   display: inline-block;
   transition: var(--transition);
 }
@@ -160,24 +159,24 @@ main {
 .hero {
   background-color: rgba(240, 249, 255, 0.85);
   text-align: center;
-  padding: 6rem 1rem 4rem;
+  padding: 5rem 1rem 3rem;
   color: var(--text);
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
   border-radius: var(--radius);
-  margin-top: 4rem;
+  margin-top: 3rem;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero h1 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin-bottom: 2rem;
   color: var(--text-light);
 }
@@ -185,9 +184,9 @@ main {
 .cta-button {
   background-color: var(--primary);
   color: #fff;
-  padding: 0.85rem 2rem;
+  padding: 0.75rem 1.75rem;
   border-radius: var(--radius);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -319,30 +318,39 @@ footer {
 
 /* Responsive: Mobile-first adjustments */
 @media (max-width: 768px) {
+  .site-header {
+    padding: 0.5rem 0.25rem;
+  }
+
   .header-container {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0 1rem;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .logo img {
+    width: 40px;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
-  .steps-list {
-    flex-direction: column;
-    gap: 2rem;
+  .nav-links li a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
   }
 
-  .step {
-    width: 100%;
+  .hero {
+    padding: 4rem 1rem 2rem;
+    margin-top: 2rem;
   }
 
   .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .hero p {
@@ -350,8 +358,12 @@ footer {
   }
 
   .cta-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    padding: 0.65rem 1.25rem;
+  }
+
+  .steps-list {
+    flex-direction: column;
   }
 
   .payment-icons {
@@ -360,10 +372,7 @@ footer {
   }
 
   footer .social {
-    display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
   }
 }
-
