@@ -24,33 +24,47 @@
 
     <!-- Header -->
     <header class="site-header">
-  <div class="container header-container">
-    <a href="index.html" class="logo" title="Go to homepage">
-      <img src="assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
-    </a>
+      <div class="container header-container">
+        <a href="index.html" class="logo" title="Go to homepage">
+          <img src="assets/img/logo.jpg" alt="Reale Mutua Logo" width="60" />
+        </a>
 
-    <!-- Updated nav tag -->
-    <nav role="navigation" aria-label="Main navigation">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/calcola.html">Calculate Insurance</a></li>
-        <li><a href="pages/pricing.html">Plans</a></li>
-        <li><a href="pages/faq.html">FAQ</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li><a href="pages/blog.html">Blog</a></li>
+        <!-- Hamburger button -->
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
 
-        <li class="dropdown">
-          <a href="javascript:void(0)">MyLogin</a>
-          <ul class="dropdown-menu">
-            <li><a href="pages/login.html">Login</a></li>
-            <li><a href="pages/registration.html">Registration</a></li>
+        <nav
+          role="navigation"
+          aria-label="Main navigation"
+          id="primary-navigation"
+        >
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/calcola.html">Calculate Insurance</a></li>
+            <li><a href="pages/pricing.html">Plans</a></li>
+            <li><a href="pages/faq.html">FAQ</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+
+            <li class="dropdown">
+              <a href="javascript:void(0)">MyLogin</a>
+              <ul class="dropdown-menu">
+                <li><a href="pages/login.html">Login</a></li>
+                <li><a href="pages/registration.html">Registration</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+        </nav>
+      </div>
+    </header>
 
     <!-- Main -->
     <main>
@@ -132,5 +146,16 @@
         <p>&copy; 2025 Artem Bulgakov. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav[role="navigation"]');
+
+  hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+    hamburger.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('open');
+  });
+</script>
+
   </body>
 </html>
