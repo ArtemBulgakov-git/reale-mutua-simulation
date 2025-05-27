@@ -315,3 +315,97 @@ footer {
     text-align: center;
   }
 }
+
+/* Hamburger button */
+.nav-toggle {
+  display: none; /* hidden by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  z-index: 20; /* above nav */
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background-color: var(--primary-color);
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+/* When active (menu open), transform hamburger to "X" */
+.nav-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle.active .hamburger::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Responsive nav adjustments */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* hide nav links by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background);
+    position: absolute;
+    top: 70px; /* header height + some */
+    left: 0;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 1rem 0;
+    z-index: 15;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding-left: 0;
+  }
+
+  /* Optional: make dropdown clickable on mobile */
+  .dropdown > a {
+    cursor: pointer;
+  }
+}

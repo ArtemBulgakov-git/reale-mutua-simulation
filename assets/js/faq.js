@@ -18,3 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("load-country").addEventListener("click", loadRandomCountry);
   loadRandomCountry();
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.getElementById("primary-navigation");
+
+  hamburger.addEventListener("click", () => {
+    const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+    hamburger.setAttribute("aria-expanded", !expanded);
+    nav.classList.toggle("active");
+  });
+});
